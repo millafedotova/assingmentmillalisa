@@ -1,0 +1,12 @@
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\bin\Debug\net8.0\SmartGreenhouse.Domain.deps.json
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\bin\Debug\net8.0\SmartGreenhouse.Domain.dll
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\bin\Debug\net8.0\SmartGreenhouse.Domain.pdb
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\SmartGreenhouse.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\SmartGreenhouse.Domain.AssemblyInfoInputs.cache
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\SmartGreenhouse.Domain.AssemblyInfo.cs
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\SmartGreenhouse.Domain.csproj.CoreCompileInputs.cache
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\SmartGreenhouse.Domain.sourcelink.json
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\SmartGreenhouse.Domain.dll
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\refint\SmartGreenhouse.Domain.dll
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\SmartGreenhouse.Domain.pdb
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Domain\obj\Debug\net8.0\ref\SmartGreenhouse.Domain.dll

@@ -1,0 +1,6 @@
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Infrastructure\obj\Debug\net8.0\SmartGreenhouse.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Infrastructure\obj\Debug\net8.0\SmartGreenhouse.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Infrastructure\obj\Debug\net8.0\SmartGreenhouse.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Infrastructure\obj\Debug\net8.0\SmartGreenhouse.Infrastructure.AssemblyInfo.cs
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Infrastructure\obj\Debug\net8.0\SmartGreenhouse.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\votet\source\repos\proj\learning-assignments-millafedotova\backend\src\SmartGreenhouse.Infrastructure\obj\Debug\net8.0\SmartGreenhouse.Infrastructure.sourcelink.json

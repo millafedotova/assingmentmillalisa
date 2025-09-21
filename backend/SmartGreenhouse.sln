@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ADE8E001-B250-40A6-9021-C3586911F8FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Domain", "src\SmartGreenhouse.Domain\SmartGreenhouse.Domain.csproj", "{2157321A-E74F-4011-9F25-51835E9E0B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Infrastructure", "src\SmartGreenhouse.Infrastructure\SmartGreenhouse.Infrastructure.csproj", "{9BA4FFF7-4A75-4B72-9E6B-6B906C2688F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Application", "src\SmartGreenhouse.Application\SmartGreenhouse.Application.csproj", "{C3F61586-CEDD-4169-8978-C8A1E986321C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Shared", "src\SmartGreenhouse.Shared\SmartGreenhouse.Shared.csproj", "{6609BCFA-83F5-4810-97AC-F02EC787F0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Api", "src\SmartGreenhouse.Api\SmartGreenhouse.Api.csproj", "{4D65317E-AA7D-4D84-94B6-D45893351E87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2157321A-E74F-4011-9F25-51835E9E0B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2157321A-E74F-4011-9F25-51835E9E0B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2157321A-E74F-4011-9F25-51835E9E0B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2157321A-E74F-4011-9F25-51835E9E0B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA4FFF7-4A75-4B72-9E6B-6B906C2688F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA4FFF7-4A75-4B72-9E6B-6B906C2688F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA4FFF7-4A75-4B72-9E6B-6B906C2688F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA4FFF7-4A75-4B72-9E6B-6B906C2688F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F61586-CEDD-4169-8978-C8A1E986321C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F61586-CEDD-4169-8978-C8A1E986321C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F61586-CEDD-4169-8978-C8A1E986321C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F61586-CEDD-4169-8978-C8A1E986321C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6609BCFA-83F5-4810-97AC-F02EC787F0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6609BCFA-83F5-4810-97AC-F02EC787F0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6609BCFA-83F5-4810-97AC-F02EC787F0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6609BCFA-83F5-4810-97AC-F02EC787F0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D65317E-AA7D-4D84-94B6-D45893351E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D65317E-AA7D-4D84-94B6-D45893351E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D65317E-AA7D-4D84-94B6-D45893351E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D65317E-AA7D-4D84-94B6-D45893351E87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2157321A-E74F-4011-9F25-51835E9E0B6F} = {ADE8E001-B250-40A6-9021-C3586911F8FB}
+		{9BA4FFF7-4A75-4B72-9E6B-6B906C2688F5} = {ADE8E001-B250-40A6-9021-C3586911F8FB}
+		{C3F61586-CEDD-4169-8978-C8A1E986321C} = {ADE8E001-B250-40A6-9021-C3586911F8FB}
+		{6609BCFA-83F5-4810-97AC-F02EC787F0E1} = {ADE8E001-B250-40A6-9021-C3586911F8FB}
+		{4D65317E-AA7D-4D84-94B6-D45893351E87} = {ADE8E001-B250-40A6-9021-C3586911F8FB}
+	EndGlobalSection
+EndGlobal
