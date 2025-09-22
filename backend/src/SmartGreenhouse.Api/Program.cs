@@ -9,7 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var cs = builder.Configuration.GetConnectionString("Default")
-         ?? "Host=localhost;Port=5432;Database=greenhouse;Username=greenhouse;Password=greenhouse";
+         ?? "Host=localhost;Port=5432;Database=greenhouse;Username=postgres;Password=Password";
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(cs));
 
 builder.Services.AddScoped<ReadingService>();

@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+
   <ItemGroup>
     <ProjectReference Include="..\SmartGreenhouse.Domain\SmartGreenhouse.Domain.csproj" />
     <ProjectReference Include="..\SmartGreenhouse.Infrastructure\SmartGreenhouse.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
   </ItemGroup>
 
   <PropertyGroup>
