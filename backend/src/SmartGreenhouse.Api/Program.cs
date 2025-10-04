@@ -1,21 +1,30 @@
 using Microsoft.EntityFrameworkCore;
 using SmartGreenhouse.Application.Services;
 using SmartGreenhouse.Infrastructure.Data;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// Add services to the container.
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
 
-var cs = builder.Configuration.GetConnectionString("Default")
-         ?? "Host=localhost;Port=5432;Database=greenhouse;Username=postgres;Password=Password";
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(cs));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 
+builder.Services.AddSingleton<SimulatedDeviceFactory>();
+builder.Services.AddSingleton<IDeviceFactoryResolver, DeviceFactoryResolver>();
+builder.Services.AddScoped<CaptureReadingService>();
 builder.Services.AddScoped<ReadingService>();
 
 var app = builder.Build();
-app.UseSwagger();
-app.UseSwaggerUI();
+
+app.UseHttpsRedirection();
+app.UseAuthorization();
 app.MapControllers();
-await app.RunAsync();
+
+app.Run();

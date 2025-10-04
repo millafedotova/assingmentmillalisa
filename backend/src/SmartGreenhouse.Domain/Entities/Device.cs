@@ -1,11 +1,12 @@
-namespace SmartGreenhouse.Domain.Entities;
+using SmartGreenhouse.Domain.Entities;
+using SmartGreenhouse.Domain.Enums;
 
 public class Device
 {
-    public int Id { get; set; } // PK
-    public string DeviceName { get; set; } = string.Empty; // custom human-readable name
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public int Id { get; set; }
+    public required string DeviceName { get; set; }
+    public DeviceTypeEnum DeviceType { get; set; } = DeviceTypeEnum.Simulated;
+    public DateTime CreatedAt { get; set; }
 
-    // Navigation property
-    public ICollection<SensorReading> Readings { get; set; } = new List<SensorReading>();
+    public ICollection<SensorReading> Readings { get; set; }
 }

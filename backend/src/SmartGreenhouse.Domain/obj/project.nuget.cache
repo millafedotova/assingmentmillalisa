@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "je7LHpWcPh4=",
+  "dgSpecHash": "MhO48Dnbff0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lizzu\\source\\repos\\learningassignment\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
-    "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
-    "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.20\\microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

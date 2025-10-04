@@ -22,3 +22,15 @@ C:\Users\Lizzu\source\repos\learningassignment\assingmentmillalisa\backend\src\S
 C:\Users\Lizzu\source\repos\learningassignment\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\refint\SmartGreenhouse.Shared.dll
 C:\Users\Lizzu\source\repos\learningassignment\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.pdb
 C:\Users\Lizzu\source\repos\learningassignment\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\ref\SmartGreenhouse.Shared.dll
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\bin\Debug\net8.0\SmartGreenhouse.Shared.deps.json
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\bin\Debug\net8.0\SmartGreenhouse.Shared.dll
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\bin\Debug\net8.0\SmartGreenhouse.Shared.pdb
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.AssemblyInfoInputs.cache
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.AssemblyInfo.cs
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.csproj.CoreCompileInputs.cache
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.sourcelink.json
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.dll
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\refint\SmartGreenhouse.Shared.dll
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\SmartGreenhouse.Shared.pdb
+C:\Users\votet\source\repos\proj\assingmentmillalisa\backend\src\SmartGreenhouse.Shared\obj\Debug\net8.0\ref\SmartGreenhouse.Shared.dll

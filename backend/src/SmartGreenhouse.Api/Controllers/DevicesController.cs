@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SmartGreenhouse.Domain.Entities;
 using SmartGreenhouse.Infrastructure.Data;
-
-namespace SmartGreenhouse.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -13,7 +10,13 @@ public class DevicesController : ControllerBase
     public DevicesController(AppDbContext db) => _db = db;
 
     [HttpGet]
-    public async Task<IActionResult> Get() => Ok(await _db.Devices.AsNoTracking().ToListAsync());
+    public async Task<IActionResult> Get()
+    {
+        var dtos = await _db.Devices.AsNoTracking()
+            .Select(d => new DeviceDto(d.Id, d.DeviceName, d.DeviceType, d.CreatedAt))
+            .ToListAsync();
+        return Ok(dtos);
+    }
 
     [HttpPost]
     public async Task<IActionResult> Create(Device device)
