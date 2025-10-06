@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d6PwEAGNBks=",
+  "dgSpecHash": "cq+c4tzjd+o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+  "projectFilePath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lizzu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.8\\microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
