@@ -12,8 +12,8 @@ using SmartGreenhouse.Infrastructure.Data;
 namespace SmartGreenhouse.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250922173207_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251006194156_InitialClean")]
+    partial class InitialClean
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("SmartGreenhouse.Domain.Entities.Device", b =>
+            modelBuilder.Entity("Device", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -38,9 +38,17 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
 
                     b.Property<string>("DeviceName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(120)
+                        .HasColumnType("character varying(120)");
+
+                    b.Property<int>("DeviceType")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DeviceName");
+
+                    b.HasIndex("DeviceType");
 
                     b.ToTable("Devices");
                 });
@@ -56,9 +64,8 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                     b.Property<int>("DeviceId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("SensorType")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("SensorType")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("Timestamp")
                         .HasColumnType("timestamp with time zone");
@@ -74,12 +81,12 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
 
                     b.HasIndex("DeviceId", "SensorType", "Timestamp");
 
-                    b.ToTable("Readings");
+                    b.ToTable("SensorReadings");
                 });
 
             modelBuilder.Entity("SmartGreenhouse.Domain.Entities.SensorReading", b =>
                 {
-                    b.HasOne("SmartGreenhouse.Domain.Entities.Device", "Device")
+                    b.HasOne("Device", "Device")
                         .WithMany("Readings")
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -88,7 +95,7 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                     b.Navigation("Device");
                 });
 
-            modelBuilder.Entity("SmartGreenhouse.Domain.Entities.Device", b =>
+            modelBuilder.Entity("Device", b =>
                 {
                     b.Navigation("Readings");
                 });

@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F61586-CEDD-4169-8978-C8A1E986321C}|src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj|c:\\users\\lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\smartgreenhouse.application\\smartgreenhouse.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C3F61586-CEDD-4169-8978-C8A1E986321C}|src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj|solutionrelative:src\\smartgreenhouse.application\\smartgreenhouse.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D65317E-AA7D-4D84-94B6-D45893351E87}|src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj|c:\\users\\lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\smartgreenhouse.api\\smartgreenhouse.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4D65317E-AA7D-4D84-94B6-D45893351E87}|src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj|solutionrelative:src\\smartgreenhouse.api\\smartgreenhouse.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2157321A-E74F-4011-9F25-51835E9E0B6F}|src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj|c:\\users\\lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\smartgreenhouse.domain\\smartgreenhouse.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2157321A-E74F-4011-9F25-51835E9E0B6F}|src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj|solutionrelative:src\\smartgreenhouse.domain\\smartgreenhouse.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SmartGreenhouse.Api",
+              "DocumentMoniker": "C:\\Users\\Lizzu\\Source\\Repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+              "RelativeDocumentMoniker": "src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+              "ToolTip": "C:\\Users\\Lizzu\\Source\\Repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+              "RelativeToolTip": "src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-06T18:14:14.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmartGreenhouse.Application",
+              "DocumentMoniker": "C:\\Users\\Lizzu\\Source\\Repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+              "RelativeDocumentMoniker": "src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+              "ToolTip": "C:\\Users\\Lizzu\\Source\\Repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+              "RelativeToolTip": "src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-06T18:14:13.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SmartGreenhouse.Domain",
+              "DocumentMoniker": "C:\\Users\\Lizzu\\Source\\Repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+              "ToolTip": "C:\\Users\\Lizzu\\Source\\Repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+              "RelativeToolTip": "src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-06T18:14:11.307Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

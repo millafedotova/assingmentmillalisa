@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj": {}
+    "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj": {
+    "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
         "projectName": "SmartGreenhouse.Api",
-        "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
-        "packagesPath": "C:\\Users\\votet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\obj\\",
+        "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+        "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\votet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lizzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,17 +33,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj": {
-                "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj"
+              "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj": {
+                "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj"
               },
-              "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
-                "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
+              "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
               },
-              "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj"
+              "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj"
               },
-              "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj": {
-                "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj"
+              "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj": {
+                "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj"
               }
             }
           }
@@ -57,7 +57,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -93,6 +94,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -101,24 +120,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj": {
+    "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+        "projectUniqueName": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
         "projectName": "SmartGreenhouse.Application",
-        "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
-        "packagesPath": "C:\\Users\\votet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\obj\\",
+        "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+        "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\votet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lizzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -134,11 +153,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
-                "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
+              "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
               },
-              "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj"
+              "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj"
               }
             }
           }
@@ -152,7 +171,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -174,29 +194,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
+    "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
         "projectName": "SmartGreenhouse.Domain",
-        "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
-        "packagesPath": "C:\\Users\\votet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+        "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\votet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lizzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -223,7 +257,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -239,29 +274,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
+    "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
         "projectName": "SmartGreenhouse.Infrastructure",
-        "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\votet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\obj\\",
+        "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\votet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lizzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -277,8 +326,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
-                "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
+              "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
               }
             }
           }
@@ -292,7 +341,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -318,29 +368,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj": {
+    "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
+        "projectUniqueName": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
         "projectName": "SmartGreenhouse.Shared",
-        "projectPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
-        "packagesPath": "C:\\Users\\votet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\votet\\source\\repos\\proj\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\obj\\",
+        "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
+        "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\votet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lizzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -367,7 +431,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -383,12 +448,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

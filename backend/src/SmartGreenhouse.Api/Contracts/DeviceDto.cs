@@ -1,3 +1,10 @@
 using SmartGreenhouse.Domain.Enums;
 
-public record DeviceDto(int Id, string DeviceName, DeviceTypeEnum DeviceType, DateTime CreatedAt);
+namespace SmartGreenhouse.Api.Contracts;
+
+public record DeviceDto(
+    int Id,
+    string DeviceName,
+    DeviceTypeEnum DeviceType,
+    DateTime CreatedAt
+);

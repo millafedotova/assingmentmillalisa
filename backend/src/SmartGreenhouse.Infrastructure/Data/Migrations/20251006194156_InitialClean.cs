@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace SmartGreenhouse.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialClean : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,8 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    DeviceName = table.Column<string>(type: "text", nullable: false),
+                    DeviceName = table.Column<string>(type: "character varying(120)", maxLength: 120, nullable: false),
+                    DeviceType = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
@@ -27,22 +28,22 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Readings",
+                name: "SensorReadings",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     DeviceId = table.Column<int>(type: "integer", nullable: false),
-                    SensorType = table.Column<string>(type: "text", nullable: false),
+                    SensorType = table.Column<int>(type: "integer", nullable: false),
                     Value = table.Column<double>(type: "double precision", nullable: false),
                     Unit = table.Column<string>(type: "text", nullable: false),
                     Timestamp = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Readings", x => x.Id);
+                    table.PrimaryKey("PK_SensorReadings", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Readings_Devices_DeviceId",
+                        name: "FK_SensorReadings_Devices_DeviceId",
                         column: x => x.DeviceId,
                         principalTable: "Devices",
                         principalColumn: "Id",
@@ -50,8 +51,18 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Readings_DeviceId_SensorType_Timestamp",
-                table: "Readings",
+                name: "IX_Devices_DeviceName",
+                table: "Devices",
+                column: "DeviceName");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Devices_DeviceType",
+                table: "Devices",
+                column: "DeviceType");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SensorReadings_DeviceId_SensorType_Timestamp",
+                table: "SensorReadings",
                 columns: new[] { "DeviceId", "SensorType", "Timestamp" });
         }
 
@@ -59,7 +70,7 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Readings");
+                name: "SensorReadings");
 
             migrationBuilder.DropTable(
                 name: "Devices");
