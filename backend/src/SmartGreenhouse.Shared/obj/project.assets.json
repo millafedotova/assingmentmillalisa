@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
       "projectName": "SmartGreenhouse.Shared",
-      "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
+      "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj",
       "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\obj\\",
+      "outputPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

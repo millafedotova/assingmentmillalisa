@@ -2813,11 +2813,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
       "projectName": "SmartGreenhouse.Api",
-      "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
+      "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Api\\SmartGreenhouse.Api.csproj",
       "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Api\\obj\\",
+      "outputPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2839,17 +2839,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj": {
-              "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj"
+            "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj": {
+              "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj"
             },
-            "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
-              "projectPath": "C:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
+            "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
+              "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
             },
-            "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
-              "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj"
+            "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj"
             },
-            "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj": {
-              "projectPath": "c:\\Users\\Lizzu\\source\\repos\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj"
+            "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj": {
+              "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Shared\\SmartGreenhouse.Shared.csproj"
             }
           }
         }
