@@ -1,37 +1,39 @@
 using Microsoft.AspNetCore.Mvc;
-using SmartGreenhouse.Application.Services;
-using SmartGreenhouse.Domain.Enums;
-using SmartGreenhouse.Api.Contracts;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using SmartGreenhouse.Domain.Entities;
+using SmartGreenhouse.Infrastructure.Data;
+using SmartGreenhouse.Api.Contracts;           
+using SmartGreenhouse.Application.Services;  
+using SmartGreenhouse.Application.Control;  
+
 
 namespace SmartGreenhouse.Api.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/readings")]
 public class ReadingsController : ControllerBase
 {
-    private readonly CaptureReadingService _captureService;
     private readonly ReadingService _readingService;
+    private readonly AppDbContext _db;
 
-    public ReadingsController(CaptureReadingService capture, ReadingService reading)
+    public ReadingsController(ReadingService readingService, AppDbContext db)
     {
-        _captureService = capture;
-        _readingService = reading; 
+        _readingService = readingService;
+        _db = db;
     }
 
     [HttpGet]
-    public async Task<IActionResult> Get([FromQuery] int? deviceId, [FromQuery] SensorTypeEnum? sensorType)
+    public async Task<IActionResult> Query([FromQuery] int? deviceId, [FromQuery] string? sensorType)
     {
-        var readings = await _readingService.QueryAsync(deviceId, sensorType);
-        var dtos = readings.Select(r => new ReadingDto(r.Id, r.DeviceId, r.SensorType, r.Value, r.Unit, r.Timestamp));
-        return Ok(dtos);
+        var items = await _readingService.QueryAsync(deviceId, sensorType);
+        return Ok(items);
     }
 
     [HttpPost("capture")]
-    public async Task<IActionResult> Capture([FromBody] SmartGreenhouse.Api.Contracts.CaptureReadingRequest req)
+    public async Task<IActionResult> Capture([FromBody] SensorReading reading)
     {
-        var r = await _captureService.CaptureAsync(req.DeviceId, req.SensorType);
-        return Ok(new ReadingDto(r.Id, r.DeviceId, r.SensorType, r.Value, r.Unit, r.Timestamp));
+        
+        var saved = await _readingService.AddAsync(reading);
+        return Ok(saved);
     }
 }

@@ -1,30 +1,36 @@
 using Microsoft.EntityFrameworkCore;
 using SmartGreenhouse.Application.Services;
+using SmartGreenhouse.Application.Control;
 using SmartGreenhouse.Infrastructure.Data;
-using System.Text.Json.Serialization;
+using SmartGreenhouse.Application.Abstractions;
+using SmartGreenhouse.Application.Events;
+using SmartGreenhouse.Application.Events.Observers;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-    });
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
+var cs = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? "Host=localhost;Port=5432;Database=greenhouse;Username=postgres;Password=lisa";
 
-builder.Services.AddSingleton<SimulatedDeviceFactory>();
-builder.Services.AddSingleton<IDeviceFactoryResolver, DeviceFactoryResolver>();
-builder.Services.AddScoped<CaptureReadingService>();
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(cs));
+
+builder.Services.AddScoped<IReadingPublisher, ReadingPublisher>();
+builder.Services.AddScoped<IReadingObserver, LogObserver>();
+builder.Services.AddScoped<IReadingObserver, AlertRuleObserver>();
 builder.Services.AddScoped<ReadingService>();
+
+builder.Services.AddSingleton<HysteresisCoolingStrategy>();
+builder.Services.AddSingleton<MoistureTopUpStrategy>();
+builder.Services.AddScoped<ControlStrategySelector>();
+builder.Services.AddScoped<ControlService>();
 
 var app = builder.Build();
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
+app.UseSwagger();
+app.UseSwaggerUI();
 app.MapControllers();
 
-app.Run();
+await app.RunAsync();

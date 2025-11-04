@@ -22,7 +22,98 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Device", b =>
+            modelBuilder.Entity("SmartGreenhouse.Domain.Entities.AlertNotification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AlertRuleId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("DeviceId")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsTriggered")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("SensorType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<double>("Value")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeviceId", "SensorType", "Timestamp");
+
+                    b.ToTable("AlertNotifications");
+                });
+
+            modelBuilder.Entity("SmartGreenhouse.Domain.Entities.AlertRule", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DeviceId")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("OperatorSymbol")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SensorType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<double>("Threshold")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeviceId", "SensorType");
+
+                    b.ToTable("AlertRules");
+                });
+
+            modelBuilder.Entity("SmartGreenhouse.Domain.Entities.ControlProfile", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DeviceId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("ParametersJson")
+                        .HasColumnType("text");
+
+                    b.Property<string>("StrategyKey")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeviceId");
+
+                    b.ToTable("ControlProfiles");
+                });
+
+            modelBuilder.Entity("SmartGreenhouse.Domain.Entities.Device", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -38,14 +129,9 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                         .HasMaxLength(120)
                         .HasColumnType("character varying(120)");
 
-                    b.Property<int>("DeviceType")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.HasIndex("DeviceName");
-
-                    b.HasIndex("DeviceType");
 
                     b.ToTable("Devices");
                 });
@@ -61,8 +147,9 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                     b.Property<int>("DeviceId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("SensorType")
-                        .HasColumnType("integer");
+                    b.Property<string>("SensorType")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("Timestamp")
                         .HasColumnType("timestamp with time zone");
@@ -76,14 +163,14 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DeviceId", "SensorType", "Timestamp");
+                    b.HasIndex("DeviceId");
 
-                    b.ToTable("SensorReadings");
+                    b.ToTable("Readings");
                 });
 
             modelBuilder.Entity("SmartGreenhouse.Domain.Entities.SensorReading", b =>
                 {
-                    b.HasOne("Device", "Device")
+                    b.HasOne("SmartGreenhouse.Domain.Entities.Device", "Device")
                         .WithMany("Readings")
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -92,7 +179,7 @@ namespace SmartGreenhouse.Infrastructure.Data.Migrations
                     b.Navigation("Device");
                 });
 
-            modelBuilder.Entity("Device", b =>
+            modelBuilder.Entity("SmartGreenhouse.Domain.Entities.Device", b =>
                 {
                     b.Navigation("Readings");
                 });

@@ -9,6 +9,7 @@
       "SmartGreenhouse.Application/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "SmartGreenhouse.Domain": "1.0.0",
           "SmartGreenhouse.Infrastructure": "1.0.0"
         },
