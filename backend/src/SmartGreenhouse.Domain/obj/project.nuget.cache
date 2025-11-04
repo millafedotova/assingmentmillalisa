@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "le42TScNbdA=",
   "success": true,
   "projectFilePath": "C:\\Users\\Lizzu\\source\\repos\\SmartGreenhouseExample-Student\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+=======
+  "dgSpecHash": "v/En8sw7kaQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj",
+>>>>>>> 17f5f34fd567c8b37c607534a5cb8c1d2751a8d4
   "expectedPackageFiles": [
     "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
     "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",

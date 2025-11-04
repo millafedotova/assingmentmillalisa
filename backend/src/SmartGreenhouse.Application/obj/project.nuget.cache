@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "7d9dtRclIq8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Lizzu\\source\\repos\\SmartGreenhouseExample-Student\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+=======
+  "dgSpecHash": "XFSssR5Lkw0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Application\\SmartGreenhouse.Application.csproj",
+>>>>>>> 17f5f34fd567c8b37c607534a5cb8c1d2751a8d4
   "expectedPackageFiles": [
     "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\Lizzu\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
