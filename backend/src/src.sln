@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Api", "SmartGreenhouse.Api\SmartGreenhouse.Api.csproj", "{6789C26B-9E11-E544-6817-11BACC1B241B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Application", "SmartGreenhouse.Application\SmartGreenhouse.Application.csproj", "{9370E072-0037-F268-04B7-640FBBD20731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Domain", "SmartGreenhouse.Domain\SmartGreenhouse.Domain.csproj", "{06CD7E50-6580-7DBF-78F1-0A784D4EFBFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGreenhouse.Infrastructure", "SmartGreenhouse.Infrastructure\SmartGreenhouse.Infrastructure.csproj", "{190A5022-B578-A2FC-8502-3AFF92947675}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6789C26B-9E11-E544-6817-11BACC1B241B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6789C26B-9E11-E544-6817-11BACC1B241B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6789C26B-9E11-E544-6817-11BACC1B241B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6789C26B-9E11-E544-6817-11BACC1B241B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9370E072-0037-F268-04B7-640FBBD20731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9370E072-0037-F268-04B7-640FBBD20731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9370E072-0037-F268-04B7-640FBBD20731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9370E072-0037-F268-04B7-640FBBD20731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CD7E50-6580-7DBF-78F1-0A784D4EFBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CD7E50-6580-7DBF-78F1-0A784D4EFBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06CD7E50-6580-7DBF-78F1-0A784D4EFBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06CD7E50-6580-7DBF-78F1-0A784D4EFBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{190A5022-B578-A2FC-8502-3AFF92947675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190A5022-B578-A2FC-8502-3AFF92947675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190A5022-B578-A2FC-8502-3AFF92947675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190A5022-B578-A2FC-8502-3AFF92947675}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE9BA9A6-B7AD-4907-B9A8-3B022D3F5862}
+	EndGlobalSection
+EndGlobal

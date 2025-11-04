@@ -1,55 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SmartGreenhouse.Infrastructure.Data;
-using SmartGreenhouse.Domain.Enums;
 using SmartGreenhouse.Domain.Entities;
-using SmartGreenhouse.Api.Contracts;
+using SmartGreenhouse.Infrastructure.Data;
+using SmartGreenhouse.Api.Contracts;           
+using SmartGreenhouse.Application.Services;  
+using SmartGreenhouse.Application.Control; 
 
+namespace SmartGreenhouse.Api.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/devices")]
 public class DevicesController : ControllerBase
 {
-    // Accept payload like: { "deviceName": "Greenhouse Pi", "deviceType": "Simulated" }
-    // deviceType is optional; if missing or invalid we default to DeviceTypeEnum.Simulated
-    public record CreateDeviceRequest(string DeviceName, string? DeviceType);
-
     private readonly AppDbContext _db;
+
     public DevicesController(AppDbContext db) => _db = db;
 
     [HttpGet]
-    public async Task<IActionResult> Get()
-    {
-        var dtos = await _db.Devices.AsNoTracking()
-            .Select(d => new DeviceDto(d.Id, d.DeviceName, d.DeviceType, d.CreatedAt))
-            .ToListAsync();
-        return Ok(dtos);
-    }
+    public async Task<IActionResult> GetAll()
+        => Ok(await _db.Devices.ToListAsync());
 
     [HttpPost]
-    public async Task<IActionResult> Create([FromBody] CreateDeviceRequest req)
+    public async Task<IActionResult> Create([FromBody] Device dto)
     {
-        if (string.IsNullOrWhiteSpace(req.DeviceName))
-            return BadRequest("deviceName is required.");
-
-        // parse optional enum name, default to Simulated on missing/invalid
-        var deviceType = DeviceTypeEnum.Simulated;
-        if (!string.IsNullOrWhiteSpace(req.DeviceType)
-            && Enum.TryParse<DeviceTypeEnum>(req.DeviceType, true, out var parsed))
-        {
-            deviceType = parsed;
-        }
-
-        var device = new Device
-        {
-            DeviceName = req.DeviceName,
-            DeviceType = deviceType
-        };
-
-        _db.Devices.Add(device);
+        _db.Devices.Add(dto);
         await _db.SaveChangesAsync();
-
-        var dto = new DeviceDto(device.Id, device.DeviceName, device.DeviceType, device.CreatedAt);
         return Ok(dto);
     }
 }
