@@ -732,53 +732,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lizzu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\votet\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\SmartGreenhouseExample-Student\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\votet\\Downloads\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
       "projectName": "SmartGreenhouse.Infrastructure",
-      "projectPath": "C:\\Users\\Lizzu\\source\\repos\\SmartGreenhouseExample-Student\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lizzu\\source\\repos\\SmartGreenhouseExample-Student\\backend\\src\\SmartGreenhouse.Infrastructure\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
-      "projectName": "SmartGreenhouse.Infrastructure",
-      "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Lizzu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Infrastructure\\obj\\",
->>>>>>> 17f5f34fd567c8b37c607534a5cb8c1d2751a8d4
+      "projectPath": "C:\\Users\\votet\\Downloads\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\SmartGreenhouse.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\votet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\votet\\Downloads\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Lizzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\votet\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "C:\\Users\\Lizzu\\source\\repos\\SmartGreenhouseExample-Student\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
-              "projectPath": "C:\\Users\\Lizzu\\source\\repos\\SmartGreenhouseExample-Student\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
-=======
-            "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
-              "projectPath": "C:\\Users\\Lizzu\\source\\repos\\learning-assignments-lizzumiko\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
->>>>>>> 17f5f34fd567c8b37c607534a5cb8c1d2751a8d4
+            "C:\\Users\\votet\\Downloads\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj": {
+              "projectPath": "C:\\Users\\votet\\Downloads\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Domain\\SmartGreenhouse.Domain.csproj"
             }
           }
         }
@@ -793,7 +772,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -822,15 +801,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.20, 8.0.20]"
+            "version": "[8.0.21, 8.0.21]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.20, 8.0.20]"
+            "version": "[8.0.21, 8.0.21]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.20, 8.0.20]"
+            "version": "[8.0.21, 8.0.21]"
           }
         ],
         "frameworkReferences": {
@@ -838,8 +817,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Users\\votet\\Downloads\\assingmentmillalisa\\backend\\src\\SmartGreenhouse.Infrastructure\\obj\\project.nuget.cache: '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }
